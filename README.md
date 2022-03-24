@@ -8,4 +8,4 @@
 * Extracurriculars 
 * Contact Staff 
 
-## There is also ways for the user to connect to social media and share their schedules with other students. Also, if there is ever any bug or error in our app there is a simple contact support option in the the contact staff button that will help the user with that. 
+## There are also ways for the user to connect to social media and share their schedules with other students. Also, if there is ever any bug or error in our app there is a simple contact support option in the the contact staff button that will help the user with that. 
