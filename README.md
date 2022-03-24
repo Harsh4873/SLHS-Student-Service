@@ -8,3 +8,4 @@
 * Extracurriculars 
 * Contact Staff 
 
+## Therefore, it is very easy to navigate through the app and use all of its features easily. 
