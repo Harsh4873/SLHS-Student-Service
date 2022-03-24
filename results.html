@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Seven Lakes Student Service</title>
+    <style>
+        .impo{
+            text-align: center;
+            color: orange;
+            font-weight: bolder;
+            align-items: center;
+            font-size: 17px;
+        }
+    </style>
+   </head>
+   <body>
+       
+   <!-- Javascript to get the text from user input to fields -->
+   <div id = "results" class = "impo"></div>
+   <a class = "impo" href="schedule.html">Back to Seven Lakes Student Service</a>
+   <script>
+       const resultsList = document.getElementById("results")
+       
+       new URLSearchParams(window.location.search).forEach((value, name)=>{
+           if(`${name}`== "Lunch Period"){
+            localStorage.setItem("Lunch", `${value}`)
+           }
+           if(`${name}`== "class1"){
+            localStorage.setItem("1", `${value}`)
+           }
+           if(`${name}`== "class2"){
+            localStorage.setItem("2", `${value}`)
+           }
+           if(`${name}`== "class3"){
+            localStorage.setItem("3", `${value}`)
+           }
+           if(`${name}`== "class4"){
+            localStorage.setItem("4", `${value}`)
+           }
+           if(`${name}`== "class5"){
+            localStorage.setItem("5", `${value}`)
+           }
+           if(`${name}`== "class6"){
+            localStorage.setItem("6", `${value}`)
+           }
+           if(`${name}`== "class7"){
+            localStorage.setItem("7", `${value}`)
+           }
+           
+       })
+      /* new URLSearchParams(window.location.search).forEach((value,name)=> {
+        resultsList.append("Hi "+`${value}`) 
+        resultsList.append(document.createElement('br'))
+
+       })*/
+       const lunch = localStorage.getItem("Lunch") 
+       const one = localStorage.getItem("1")
+       const two = localStorage.getItem("2")
+       const three = localStorage.getItem("3")
+       const four = localStorage.getItem("4")
+       const five = localStorage.getItem("5")
+       const six = localStorage.getItem("6")
+       const seven = localStorage.getItem("7")
+
+       if(lunch=="A Lunch"){
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+           resultsList.append("7:15 - 8:05: "+one)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("8:11 - 9:01: "+two)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("9:07 - 9:54: "+three)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("9:59 - 10:24: Enrichment")
+           resultsList.append(document.createElement('br'))
+           resultsList.append("10:24 - 10:54: Lunch")
+           resultsList.append(document.createElement('br'))
+           resultsList.append("11:00 - 11:53: "+four)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("11:59 - 12:48: "+five)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("12:54 - 1:42: "+six)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("1:48 - 2:35: "+seven)
+           resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+       }
+
+
+       if(lunch=="B Lunch"){
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+           resultsList.append("7:15 - 8:05: "+one)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("8:11 - 9:01: "+two)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("9:07 - 9:54: "+three)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("9:59 - 10:24: Enrichment")
+           resultsList.append(document.createElement('br'))
+           resultsList.append("10:30 - 10:54: "+ four)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("10:54 - 11:23: "+"Lunch")
+           resultsList.append(document.createElement('br'))
+           resultsList.append("11:29 - 11:53: "+ four)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("11:59 - 12:48: "+five)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("12:54 - 1:42: "+six)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("1:48 - 2:35: "+seven)
+           resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+       }
+
+       if(lunch=="C Lunch"){
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+           resultsList.append("7:15 - 8:05: "+one)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("8:11 - 9:01: "+two)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("9:07 - 9:54: "+three)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("9:59 - 10:24: Enrichment")
+           resultsList.append(document.createElement('br'))
+           resultsList.append("10:30 - 11:23: "+four)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("11:23 - 11:53: "+"Lunch")
+           resultsList.append(document.createElement('br'))
+           resultsList.append("11:59 - 12:48: "+five)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("12:54 - 1:42: "+six)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("1:48 - 2:35: "+seven)
+           resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+       }
+
+       if(lunch=="D Lunch"){
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+           resultsList.append("7:15 - 8:05: "+one)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("8:11 - 9:01: "+two)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("9:07 - 9:54: "+three)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("9:59 - 10:24: Enrichment")
+           resultsList.append(document.createElement('br'))
+           resultsList.append("10:30 - 11:23: "+four)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("11:29 - 12:18 "+five)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("12:18 - 12:48: Lunch")
+           resultsList.append(document.createElement('br'))
+           resultsList.append("12:54 - 1:42: "+six)
+           resultsList.append(document.createElement('br'))
+           resultsList.append("1:48 - 2:35: "+seven)
+           resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+        resultsList.append(document.createElement('br'))
+       }
+   </script>
+
+</body>
+</html>
